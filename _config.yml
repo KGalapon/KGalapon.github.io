@@ -228,6 +228,5 @@ jekyll-archives:
     tag: /tags/:name/
     category: /categories/:name/
 
-favicon: "/assets/Media/favicon-32x32.png"
 
 math: true
