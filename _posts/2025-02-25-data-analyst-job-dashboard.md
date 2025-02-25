@@ -121,15 +121,13 @@ for i in range(2,100):
 ```
 I used the **coherence score metric**, which measures the similarity of words in a topic ([see this link for more detail](https://neptune.ai/blog/pyldavis-topic-modelling-exploration-tool-that-every-nlp-data-scientist-should-know)) to pick the optimal amount of topics. It turned out that the ideal amount is $$15$$, achieving a coherence score of $$0.4838$$. The notebook containing the script for LDA topic modelling can be found [here](https://github.com/KGalapon/Job_Description_Clustering/blob/main/JobDescriptionLDA.ipynb).
 
-Luckily, Python has an excellent LDA visualization library called **pyLDAvis**, which gave me the following interactive visualization:
+Luckily, Python has an excellent LDA visualization library called **pyLDAvis**, which gave me the following visualization:
 
-<div style="width: 800px ; height: 700px; overflow: scroll;">
-    {% include lda_vis.html %}
-</div>
+![plot](/assets/Media/Data_Analyst_Job_Statistics_Web_App/lda_vis.png)
 
 The blobs in the Latent Dirichlet Allocation  topic visualization represent the projection of topic distributions (vector of probabilities) into two dimensions. Of course, nearer blobs indicate similar topics. The bars on the right represent which words are most important per topic. More specifically, because each topic is assumed as a distribution of words, it shows how much each word was generated or drawn from the given topic.
 
-We see, by clicking on the topic clusters above, that **topic two** contains jobs that actively use python ,data analytics, and machine learning, with **data**, **models**, **learning**, and **python** as its salient words.
+We see, from the topic clusters above, that **topic two** contains jobs that actively use python ,data analytics, and machine learning, with **data**, **models**, **learning**, and **python** as its salient words.
 
 ## The Data Analytics Job Statistics Dashboard
 
