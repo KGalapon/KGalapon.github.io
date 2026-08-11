@@ -1,20 +1,20 @@
-# Karl Galapon — Personal Blog
+# Karl Galapon: Personal Blog
 
 [![Gem Version](https://img.shields.io/gem/v/jekyll-theme-chirpy?color=brightgreen)](https://rubygems.org/gems/jekyll-theme-chirpy)
 [![Build and Deploy](https://github.com/KGalapon/KGalapon.github.io/actions/workflows/pages-deploy.yml/badge.svg)](https://github.com/KGalapon/KGalapon.github.io/actions/workflows/pages-deploy.yml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
-My personal blog for data science, statistics, and mathematics — built with [Jekyll](https://jekyllrb.com/) and the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, hosted on GitHub Pages.
+My personal blog for data science, statistics, and mathematics, built with [Jekyll](https://jekyllrb.com/) and the [Chirpy](https://github.com/cotes2020/jekyll-theme-chirpy) theme, hosted on GitHub Pages.
 
 🔗 **Live site:** [kgalapon.github.io](https://KGalapon.github.io)
 
 ## About
 
-I build tools that turn messy, real-world data into something a person can actually act on. As a 3rd-year Applied Mathematics – Data Science student at Ateneo de Manila University, most of what I do starts with data that doesn't exist yet — scraping job postings, pulling records into a warehouse, cleaning text that was never meant to be structured. This means I spend as much time on the pipeline as on the model (e.g., writing a scraper for a specific site's HTML, or using an LLM to pull years-of-experience out of a free-text job description), because a good model on bad data is still a bad result. However, the pipeline is only half the job; the other half is putting what it found in front of someone, which is why most of my projects end as a dashboard rather than a notebook. This blog documents that full path — scraper to dashboard — one project at a time.
+I build tools that turn messy, real-world data into something a person can actually act on. As a 3rd-year Applied Mathematics – Data Science student at Ateneo de Manila University, most of what I do starts with data that doesn't exist yet: scraping job postings, pulling records into a warehouse, cleaning text that was never meant to be structured. This means I spend as much time on the pipeline as on the model (e.g., writing a scraper for a specific site's HTML, or using an LLM to pull years-of-experience out of a free-text job description), because a good model on bad data is still a bad result. However, the pipeline is only half the job; the other half is putting what it found in front of someone, which is why most of my projects end as a dashboard rather than a notebook. This blog documents that full path, from scraper to dashboard, one project at a time.
 
 ## Built With
 
-- [Jekyll](https://jekyllrb.com/) — static site generator
+- [Jekyll](https://jekyllrb.com/): static site generator
 - [Chirpy theme](https://github.com/cotes2020/jekyll-theme-chirpy) (via [chirpy-starter](https://github.com/cotes2020/chirpy-starter))
 - Ruby / Bundler
 - GitHub Actions for CI/CD, deployed automatically to GitHub Pages
@@ -90,7 +90,7 @@ See the [Chirpy theme docs](https://github.com/cotes2020/jekyll-theme-chirpy/wik
 
 ## Deployment
 
-This site deploys automatically via the GitHub Actions workflow in [`.github/workflows/pages-deploy.yml`](.github/workflows/pages-deploy.yml) whenever changes are pushed to `main`. No manual build step is needed — just commit and push.
+This site deploys automatically via the GitHub Actions workflow in [`.github/workflows/pages-deploy.yml`](.github/workflows/pages-deploy.yml) whenever changes are pushed to `main`. No manual build step is needed; just commit and push.
 
 ## License
 
