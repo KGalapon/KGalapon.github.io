@@ -1,6 +1,6 @@
 ---
-title: "Greater Manila Multi-Hazard & Flood Control Investment Dashboard: An End-to-End Project"
-date: 2026-08-11
+title: "Greater Manila Multi-Hazard & Flood Control Investment Dashboard"
+date: 2026-07-18
 categories: ['Project']
 tags: ['Python', 'Streamlit', 'GeoPandas', 'Folium', 'Plotly', 'GIS', 'Spatial Analysis', 'Data Engineering', 'Public Policy']
 math: true
@@ -14,15 +14,15 @@ math: true
 
 *Built together with Val Eltagonde.*
 
-A hazard map is only as useful as the decision it can inform, and in the Philippines the hazard maps and the infrastructure spending records live in two completely separate places. This means a planner who wants to know where risk is highest and mitigation is weakest has to manually cross-reference a NOAH shapefile against a DPWH project list, one municipality at a time. So Val Eltagonde and I built a dashboard that fuses them: it overlays PAGASA/Project NOAH's storm surge, flood, and landslide hazard layers with the Department of Public Works and Highways' flood control project records, scoped to the five provinces that make up the Greater Manila Area (Metro Manila, Bulacan, Cavite, Laguna, and Rizal, together known as "NCR Plus"). The [code is on GitHub](https://github.com/KGalapon/Multi-Hazard-Map-NOAH-Flood-Control-Projects); a public deployment is still in progress, so reach out at **karlchestergalapon77@gmail.com** if you would like early access.
+A hazard map is only as useful as the decision it can inform, and in the Philippines, the hazard maps and the infrastructure spending records live in two completely separate places. This means a planner who wants to know where risk is highest, and mitigation is weakest, has to cross-reference a NOAH shapefile against a DPWH project list manually, one municipality at a time. So Val Eltagonde and I built a dashboard that fuses them: it overlays PAGASA/Project NOAH's storm surge, flood, and landslide hazard layers with the Department of Public Works and Highways' flood control project records, scoped to the five provinces that make up the Greater Manila Area (Metro Manila, Bulacan, Cavite, Laguna, and Rizal, together known as "NCR Plus"). The [code is on GitHub](https://github.com/KGalapon/Multi-Hazard-Map-NOAH-Flood-Control-Projects); a public deployment is still in progress, so reach out at **karlchestergalapon77@gmail.com** if you would like early access.
 
 As someone trying to think like a planner instead of just a data scientist, I kept returning to a few questions:
 
-- Where in the Greater Manila Area is compound hazard risk, storm surge, flood, and landslide occurring together, highest?
+- Where in the Greater Manila Area is compound hazard risk of storm surge, flood, and landslide occurring together, highest?
 - Which municipalities carry serious hazard exposure but little or no flood-control investment to show for it?
 - Given the ₱122.9 billion already spent across 2,245 recorded projects in this region alone, is that spending actually going where the risk is?
 
-Dashboards for hazard maps alone, or project spending alone, are not hard to find. However, I could not find one that put both in the same view, at the municipality level, with the compounding effect of overlapping hazards accounted for rather than averaged away. Building that turned out to be a GIS data engineering problem first and a modeling problem a distant second, which is not how the story usually goes on a project write-up like this one.
+Dashboards for hazard maps alone, or project spending alone, are not hard to find. However, I could not find one that put both in the same view, at the municipality level, with the compounding effect of overlapping hazards accounted for rather than averaged away. This turned out to be a GIS data engineering problem first and a modeling problem second, which isn't how the story usually goes on a project write-up like this one.
 
 ## Data Sources and Scope
 
